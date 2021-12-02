@@ -1,3 +1,74 @@
-body {
-    background-color: red;
+/* BASE STYLING */
+
+$green-grey: #709b6b;
+$pine: #345231;
+$black: #1f1f1f;
+$white: #f6f6f6;
+$accent: #e4a436;
+$base-font: 'Montserrat', sans-serif;
+$accent-font: 'Abril Fatface', cursive;
+
+@import "setup";
+
+/* ================ TYPOGRAPHY ================== */
+
+html {
+    font-family: $base-font;
+    font-size: 125%;
+    line-height: 32px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+    font-family: $accent-font;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* ================ GENERAL ================== */
+
+.wrapper {
+    max-width: 1650px;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-family: $accent-font;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 0;
+    background-color: $accent;
+    padding: 15px 30px;
+}
+
