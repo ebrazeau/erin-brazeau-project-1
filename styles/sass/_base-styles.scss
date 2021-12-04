@@ -1,0 +1,72 @@
+/* ================ TYPOGRAPHY ================== */
+
+html {
+    font-family: $base-font;
+    font-size: 125%;
+    line-height: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $accent-font;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a:hover {
+    color: $accent;
+}
+
+/* ================ GENERAL ================== */
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+a:hover {
+    color: $accent;
+}
+button {
+    font-family: $accent-font;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 0;
+    background-color: $accent;
+    padding: 15px 30px;
+}

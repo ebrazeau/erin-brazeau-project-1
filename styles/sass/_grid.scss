@@ -1,0 +1,32 @@
+.grid {
+    background-color: white;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .box {
+        width: 50%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            width: 50%;
+        }
+    }
+}
+
+.box1 {
+    background-color: $green-grey;
+}
+
+.box4 {
+    background-color: $pine;
+}

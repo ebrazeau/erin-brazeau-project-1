@@ -20,19 +20,23 @@
 
     <!-- HEADER STARTS -->
     <header>
-        <nav>
-            <h2>Willow</h2>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <span>Daily musings of</span>
-        <h1>Willow</h1>
-        <div class="img-container-1">
-            <img src="assets/home-image-1.jpg" alt="A portrait of Willow">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li class="nav-logo"><h2>Willow</h2></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <img src="assets/circle-text.png" alt="Daily musings of" class="circle-text">
+                <h1>Willow</h1>
+                <div class="img-container-1">
+                    <img src="assets/home-image-1.jpg" alt="A portrait of Willow" class="willow-1">
+                </div>
+            </div>
         </div>
     </header>
     <!-- HEADER ENDS -->
@@ -42,9 +46,11 @@
 
         <!-- ABOUT STARTS -->
         <section class="about">
-            <h2>Who's willow?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut exercitationem iusto quasi, accusantium architecto corporis cupiditate pariatur doloribus quisquam libero itaque molestias quas fuga consectetur cumque perferendis dolores consequuntur, facere sequi eius inventore possimus dolore sint reiciendis! Impedit nam veritatis ipsa autem. Dolorem a enim molestiae eaque accusantium ad commodi!</p>
-            <button>Find out more</button>
+            <div class="wrapper">
+                <h2>Who's willow?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut exercitationem iusto quasi, accusantium architecto corporis cupiditate pariatur doloribus quisquam libero itaque molestias quas fuga consectetur cumque perferendis dolores consequuntur, facere sequi eius inventore possimus dolore sint reiciendis! Impedit nam veritatis ipsa autem. Dolorem a enim molestiae eaque accusantium ad commodi!</p>
+                <button>Find out more</button>
+            </div>
         </section>
         <!-- ABOUT ENDS -->
 
@@ -79,12 +85,18 @@
 
         <!-- JOURNEY STARTS -->
         <section class="journey">
-            <div class="container home-image-4">
-                <img src="assets/home-image-4.jpg" alt="Willow inside of a greenhouse">
+            <div class="wrapper">
+                <div class="journey-img">
+                    <div class="container home-image-4">
+                        <img src="assets/home-image-4.jpg" alt="Willow inside of a greenhouse">
+                    </div>
+                </div>
+                <div class="journey-txt">
+                    <h2>Willow's Journey</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus porro et aspernatur quaerat? Saepe laboriosam repellendus corporis magnam veniam atque. Incidunt pariatur, voluptates non quas voluptatem necessitatibus error? Aliquam iure voluptas sapiente minima libero amet natus porro, sint ipsa dolorum sunt modi minus veniam fuga earum doloremque obcaecati dolor!</p>
+                    <button>Find out more</button>
+                </div>
             </div>
-            <h2>Willow's Journey</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus porro et aspernatur quaerat? Saepe laboriosam repellendus corporis magnam veniam atque. Incidunt pariatur, voluptates non quas voluptatem necessitatibus error? Aliquam iure voluptas sapiente minima libero amet natus porro, sint ipsa dolorum sunt modi minus veniam fuga earum doloremque obcaecati dolor! Dignissimos officia natus mollitia fuga dolorem, libero expedita totam error neque?</p>
-            <button>Find out more</button>
         </section>
         <!-- JOURNEY ENDS -->
 
@@ -113,31 +125,33 @@
 
     <!-- FOOTER STARTS -->
     <footer>
-        <div class="info photos">
-            <i class="fas fa-image"></i>
-            <h3>Photos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum quidem reiciendis, voluptate aliquid!</p>
-        </div>
-        <div class="info about">
-            <i class="fas fa-user"></i>
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
-            quidem reiciendis, voluptate aliquid!
-            </p>
-        </div>
-        <div class="info blog">
-            <i class="fas fa-desktop"></i>
-            <h3>Blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
-            quidem reiciendis, voluptate aliquid!
-            </p>
-        </div>
-        <div class="info contact">
-            <i class="fas fa-phone"></i>
-            <h3>Contact Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
-            quidem reiciendis, voluptate aliquid!
-            </p>
+        <div class="wrapper">
+            <div class="info photos">
+                <i class="fas fa-image"></i>
+                <h3>Photos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum quidem reiciendis, voluptate aliquid!</p>
+            </div>
+            <div class="info about">
+                <i class="fas fa-user"></i>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
+                quidem reiciendis, voluptate aliquid!
+                </p>
+            </div>
+            <div class="info blog">
+                <i class="fas fa-desktop"></i>
+                <h3>Blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
+                quidem reiciendis, voluptate aliquid!
+                </p>
+            </div>
+            <div class="info contact">
+                <i class="fas fa-phone"></i>
+                <h3>Contact Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis qui excepturi consequuntur odio quae harum
+                quidem reiciendis, voluptate aliquid!
+                </p>
+            </div>
         </div>
     </footer>
     <!-- FOOTER ENDS -->

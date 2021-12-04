@@ -1,0 +1,11 @@
+section.about {
+    height: 500px;
+    background-color: $offwhite;
+    text-align: center;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
