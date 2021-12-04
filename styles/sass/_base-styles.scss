@@ -4,6 +4,7 @@ html {
     font-family: $base-font;
     font-size: 125%;
     line-height: 32px;
+    background-color: $offwhite;
 }
 
 h1,
@@ -18,19 +19,19 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 2.1rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 p {
@@ -62,6 +63,7 @@ a {
 a:hover {
     color: $accent;
 }
+
 button {
     font-family: $accent-font;
     text-transform: uppercase;
@@ -69,4 +71,8 @@ button {
     border: 0;
     background-color: $accent;
     padding: 15px 30px;
+}
+
+nav {
+    font: $offwhite;
 }

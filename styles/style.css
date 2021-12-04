@@ -1,3 +1,4 @@
+/* VARIABLES & IMPORTS */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -230,12 +231,12 @@ html {
   overflow: hidden;
 }
 
-/* VARIABLES & IMPORTS */
 /* ================ TYPOGRAPHY ================== */
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 125%;
   line-height: 32px;
+  background-color: #f6f6f6;
 }
 
 h1,
@@ -250,19 +251,19 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 p {
@@ -303,13 +304,42 @@ button {
   padding: 15px 30px;
 }
 
-/* ============ HEADER ============= */
-header {
+nav {
+  font: #f6f6f6;
+}
+
+/* ================ HEADER ================== */
+.header-index {
   text-transform: uppercase;
   background-color: #345231;
   color: #f6f6f6;
   height: 800px;
-  position: relative;
+}
+.header-index .header-content {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+}
+.header-index .header-content .circle-text {
+  width: 137px;
+  height: 170px;
+}
+.header-index .header-content .img-container-1 {
+  background-color: #f6f6f6;
+}
+.header-index .header-content .willow-1 {
+  width: 400px;
+}
+.header-index .header-content h1 {
+  font-size: 6rem;
 }
 
 nav {
@@ -337,36 +367,13 @@ nav ul a {
   text-decoration: none;
 }
 
-.header-content {
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: red;
-}
-.header-content .circle-text {
-  width: 137px;
-  height: 170px;
-}
-.header-content .img-container-1 {
-  background-color: #f6f6f6;
-}
-.header-content .willow-1 {
-  width: 400px;
-}
-
-section.about {
+/* ================ ABOUT ================== */
+section.who-willow {
   height: 500px;
   background-color: #f6f6f6;
   text-align: center;
 }
-section.about .wrapper {
+section.who-willow .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +389,7 @@ section.about .wrapper {
           justify-content: center;
 }
 
+/* ================ CONTENT GRID ================== */
 .grid {
   background-color: white;
   height: 800px;
@@ -429,6 +437,7 @@ section.about .wrapper {
   background-color: #345231;
 }
 
+/* ================ WILLOW'S JOURNEY ================== */
 .journey {
   height: 500px;
   background-color: #f6f6f6;
@@ -471,14 +480,14 @@ section.about .wrapper {
   width: 60%;
 }
 
+/* ================ IMG BG ================== */
 .image-bg {
   height: 500px;
   background: url("../assets/home-image-5.jpg") no-repeat center;
-  background-size: 100%;
-  background-origin: content-box;
+  background-size: 100% 100%;
 }
 
-/* ================ TYPOGRAPHY ================== */
+/* ================ GALLERY ================== */
 .gallery {
   height: 550px;
   background-color: lightblue;
@@ -500,10 +509,11 @@ section.about .wrapper {
   margin: 15px;
 }
 
+/* ================ FOOTER ================== */
 footer {
-  height: 600px;
+  height: 700px;
   background-color: #f6f6f6;
-  padding: 50px;
+  padding: 75px;
 }
 footer .wrapper {
   display: -webkit-box;
@@ -527,8 +537,42 @@ footer .wrapper .info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid black;
+  padding-left: 100px;
+  position: relative;
 }
 footer .wrapper .info p {
   width: 75%;
+}
+footer .wrapper .info i {
+  font-size: 1.4rem;
+  background-color: #e4a436;
+  width: 55px;
+  height: 55px;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+
+.watermark {
+  margin: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/* ================ CONTACT HEADER ================== */
+.header-contact {
+  background: url(../assets/contact-image-1.jpg) no-repeat center;
+  background-size: 100% 100%;
+  height: 600px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  position: relative;
+}
+.header-contact h1 {
+  position: absolute;
+  bottom: 15px;
 }

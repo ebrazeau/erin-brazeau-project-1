@@ -1,0 +1,14 @@
+/* ================ CONTACT HEADER ================== */
+
+.header-contact {
+    background: url(../assets/contact-image-1.jpg) no-repeat center;
+    background-size: 100% 100%;
+    height: 600px;
+    text-transform: uppercase;
+    color: $offwhite;
+    position: relative; 
+    h1 {
+        position: absolute;
+        bottom: 15px;
+    }
+}
