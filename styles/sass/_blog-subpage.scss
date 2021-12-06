@@ -1,0 +1,81 @@
+.blog-and-news {
+    display: flex;
+}
+
+.blog {
+    background-color: white;
+    margin: 10px;   
+}
+
+.blog-flex-1 {
+    margin-top: 75px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    .col1 {
+        padding: 30px;
+    } 
+    .about-willow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .about-willow-text {
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+    .recent-posts {
+        ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    }
+}
+
+.blog-flex-2 {
+    margin-top: 75px;
+    width: 1300px; 
+    display: flex;
+    flex-direction: column;
+    .col2 {
+        padding: 30px;
+    }
+    .travel-dest {
+        border-bottom: 4px solid $green-grey;
+    }
+    .comment {
+        display: flex;
+        .cmnt-txt-container {
+            margin-left: 25px;
+        }
+    }
+    .comment2 {
+        border-bottom: 4px solid $green-grey;
+    }
+    fieldset {
+        border: 0px;
+        padding: 10px;
+        .inputFlex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .userName, .userEmail {
+                border: 0px;
+                width: 49%;
+                height: 50px;
+            }
+        }
+        textarea {
+            resize: none;
+            width: 100%;
+            border: 0px;
+            margin: 15px 0px;
+        }
+        input[type="submit"] {
+            width: 100%;
+        }
+    }
+}

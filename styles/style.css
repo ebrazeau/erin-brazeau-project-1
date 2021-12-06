@@ -649,3 +649,108 @@ label {
   position: absolute;
   clip: rect(0 0 0 0);
 }
+
+.blog-and-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog {
+  background-color: white;
+  margin: 10px;
+}
+
+.blog-flex-1 {
+  margin-top: 75px;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-flex-1 .col1 {
+  padding: 30px;
+}
+.blog-flex-1 .about-willow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-flex-1 .about-willow .about-willow-text {
+  margin-top: 20px;
+}
+.blog-flex-1 .about-willow p {
+  margin-top: 10px;
+}
+.blog-flex-1 .recent-posts ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.blog-flex-2 {
+  margin-top: 75px;
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-flex-2 .col2 {
+  padding: 30px;
+}
+.blog-flex-2 .travel-dest {
+  border-bottom: 4px solid #709b6b;
+}
+.blog-flex-2 .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-flex-2 .comment .cmnt-txt-container {
+  margin-left: 25px;
+}
+.blog-flex-2 .comment2 {
+  border-bottom: 4px solid #709b6b;
+}
+.blog-flex-2 fieldset {
+  border: 0px;
+  padding: 10px;
+}
+.blog-flex-2 fieldset .inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.blog-flex-2 fieldset .inputFlex .userName, .blog-flex-2 fieldset .inputFlex .userEmail {
+  border: 0px;
+  width: 49%;
+  height: 50px;
+}
+.blog-flex-2 fieldset textarea {
+  resize: none;
+  width: 100%;
+  border: 0px;
+  margin: 15px 0px;
+}
+.blog-flex-2 fieldset input[type=submit] {
+  width: 100%;
+}
