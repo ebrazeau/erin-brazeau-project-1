@@ -16,22 +16,61 @@
     
     <script src="https://kit.fontawesome.com/198a7912e2.js" crossorigin="anonymous"></script>
 </head>
+
+<html>
 <body>
-    <header class="header-contact">
+
+    <header class="header-subpage">
+        <nav>
+            <ul>
+                <li class="nav-logo">
+                    <h2>Willow</h2>
+                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li class="nav-logo">
-                        <h2>Willow</h2>
-                    </li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
             <h1>Contact me</h1>
         </div>
+        </div>
     </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="contactBox">
+                <div class="socialIcons">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="ig"><i class="fab fa-instagram"></i></span>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <p>info@email.com</p>
+                <ul class="contactInfo">
+                    <li>123-456-7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </section>
+            <section class="contactForm">
+                <form action="submit">
+                    <fieldset>
+                        <div class="inputFlex">
+                            <label for="userName">Your Name</label>
+                            <input type="text" placeholder="Your name" name="userName" id="userName" required="true" class="userName">
+                            <label for="userEmail">Your Email</label>
+                            <input type="email" placeholder="Your email" name="userEmail" id="userEmail" required="true" class="userEmail">
+                        </div>
+                            <label for="userMessage">Your message</label>
+                            <textarea name="userMessage" placeholder="Your message" id="userMessage" cols="30" rows="10"></textarea>                
+                            <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,57 @@
+main .wrapper {
+    margin-top: 100px;
+    display: flex;
+    height: 600px;
+    .contactBox {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 375px;
+        background-color: white;
+        height: 300px;
+        margin-right: 30px;
+        .socialIcons {
+            font-size: 1.8rem;
+            color: $pine;
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+    .contactForm {
+        width: 60%;
+        fieldset {
+            padding: 0px;
+            width: 100%;
+            border: 0px;
+            position: relative;
+            .inputFlex {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .userName, .userEmail {
+                    width: 49%;
+                    height: 75px;
+                    border: 0px;
+                    padding: 5px;
+                }
+            }
+                textarea {
+                    resize: none;
+                    width: 100%;
+                    border: 0px;
+                    margin: 20px 0px;
+                }
+                input[type="submit"] {
+                    width: 100%;
+                }
+                
+        }
+    }
+}
+
+label {
+    position: absolute;
+    clip: rect(0 0 0 0); 
+}
