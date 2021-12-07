@@ -1,4 +1,4 @@
-/* ================ HEADER ================== */
+/* ================ HEADER INDEX ================== */
 
 .header-index {
     text-transform: uppercase;
@@ -10,19 +10,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        h1 {
+            font-size: 7rem;
+        }
         .circle-text {
-            width: 137px;
-            height: 170px;
+            width: 117px;
+            height: 150px;
+            transform: translate(60px, -15px);
         }
         .img-container-1 {
             background-color: $offwhite;
+            transform: translateY(65px);
+            margin-left: 25px;
         }
         .willow-1 {
-            width: 400px;
-        }
-        h1 {
-            font-size: 6rem;
+            width: 525px;
         }
     }
 }
@@ -32,9 +34,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellowgreen;
         ul {
             display: flex;
+            li {
+                margin: 0px 10px;
+            }
             a {
                 font-family: $base-font;
                 font-weight: 700;
@@ -43,4 +47,3 @@ nav {
             }
         }
 }
-

@@ -11,15 +11,16 @@ $accent-font: 'Abril Fatface', cursive;
 @import "setup";
 @import "base-styles";
 @import "header-index";
-@import "about";
-@import "grid";
-@import "journey";
-@import "image-bg";
-@import "gallery";
-@import "footer";
+@import "about-index";
+@import "grid-index";
+@import "journey-index";
+@import "image-bg-index";
+@import "gallery-index";
+@import "footer-index";
 @import "header-subpage";
 @import "contact-subpage";
-@import "blog-subpage"
+@import "blog-subpage";
+@import "index-query";
 
 
 
