@@ -3,40 +3,26 @@
 
 .grid {
     background-color: white;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    .box {
-        width: 50%;
-        height: 400px;
+    .wrapper {
+        background-color: white;
+        height: 800px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        p {
+        flex-wrap: wrap;
+        text-align: center;
+        .box {
             width: 50%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+            p {
+                width: 50%;
+            }
         }
     }
 }
 
-.box1 {
-    background-color: $green-grey;
-    img {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-
-
-
-.box4 {
-    background-color: $pine;
-    img {
-        position: absolute;
-        bottom: 15px;
-        left: -15px;
-    }
-}

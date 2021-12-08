@@ -401,6 +401,9 @@ section.who-willow .wrapper {
 /* ================ CONTENT GRID ================== */
 .grid {
   background-color: white;
+}
+.grid .wrapper {
+  background-color: white;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,7 +412,7 @@ section.who-willow .wrapper {
       flex-wrap: wrap;
   text-align: center;
 }
-.grid .box {
+.grid .wrapper .box {
   width: 50%;
   height: 400px;
   display: -webkit-box;
@@ -425,28 +428,12 @@ section.who-willow .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
-.grid .box p {
+.grid .wrapper .box img {
+  width: 100%;
+}
+.grid .wrapper .box p {
   width: 50%;
-}
-
-.box1 {
-  background-color: #709b6b;
-}
-.box1 img {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-
-.box4 {
-  background-color: #345231;
-}
-.box4 img {
-  position: absolute;
-  bottom: 15px;
-  left: -15px;
 }
 
 /* ================ WILLOW'S JOURNEY ================== */
@@ -480,13 +467,6 @@ section.who-willow .wrapper {
 .journey .wrapper .journey-img .home-image-4 {
   width: 310px;
   height: 310px;
-  background-color: #709b6b;
-  position: relative;
-}
-.journey .wrapper .journey-img .home-image-4 img {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
 }
 .journey .wrapper .journey-txt {
   width: 60%;
@@ -505,7 +485,7 @@ section.who-willow .wrapper {
   background-color: lightblue;
 }
 .gallery .gallery-list {
-  height: 550px;
+  height: 100%;
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,12 +746,7 @@ label {
   width: 100%;
 }
 
-/* ================ MEDIA QUERIES ================== */
-@media (max-width: 700px) {
-  h1 {
-    background-color: lightblue;
-  }
-}
+/* ================ MEDIA QUERIES FOR INDEX ================== */
 @media (max-width: 1280px) {
   .header-index .header-content .circle-text {
     width: 97px;
@@ -780,7 +755,6 @@ label {
             transform: translate(15px, -10px);
   }
   .header-index .header-content h1 {
-    background-color: yellow;
     font-size: 6rem;
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
@@ -793,12 +767,215 @@ label {
     width: 450px;
   }
 
+  .grid {
+    height: 1600px;
+  }
+  .grid .wrapper {
+    width: 100%;
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid .wrapper .box {
+    width: 100%;
+    height: 300px;
+  }
+  .grid .wrapper .box img {
+    width: 100%;
+  }
+  .grid .wrapper .box p {
+    width: 90%;
+  }
+  .grid .wrapper .box1, .grid .wrapper .box4 {
+    height: 500px;
+    background-color: green;
+  }
+
   .journey .journey-txt {
     margin-left: 25px;
   }
+
+  .gallery .gallery-list img {
+    width: 325px;
+  }
+
+  footer {
+    height: 900px;
+    padding: 25px;
+  }
+  footer .wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .wrapper .info {
+    padding-top: 10px;
+    width: 100%;
+  }
+  footer .wrapper .info p {
+    width: 100%;
+  }
 }
-@media (max-width: 1920px) {
-  h1 {
-    background-color: blue;
+@media (max-width: 1000px) {
+  .header-index .header-content .circle-text {
+    width: 67px;
+    height: 90px;
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+  .header-index .header-content h1 {
+    font-size: 4rem;
+    -webkit-transform: translateX(-25px);
+            transform: translateX(-25px);
+  }
+  .header-index .header-content .img-container-1 {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .header-index .header-content .img-container-1 .willow-1 {
+    width: 350px;
+  }
+
+  .journey {
+    height: 800px;
+  }
+  .journey p {
+    width: 100%;
+  }
+  .journey .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journey .wrapper .home-image-4 {
+    margin-bottom: 50px;
+  }
+  .journey .wrapper .journey-txt {
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-bg {
+    display: none;
+  }
+
+  .gallery {
+    height: 400px;
+  }
+  .gallery .gallery-list img {
+    width: 250px;
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    display: none;
+  }
+
+  .grid {
+    height: 1600px;
+  }
+  .grid .wrapper {
+    width: 100%;
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid .wrapper .box1, .grid .wrapper .box4 {
+    width: 100%;
+    height: 400px;
+  }
+  .grid .wrapper .box1 img, .grid .wrapper .box4 img {
+    width: 100%;
+  }
+
+  .gallery {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery .deleted-image {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header-index .header-content {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section.who-willow {
+    height: 650px;
+  }
+
+  .grid {
+    height: 1300px;
+  }
+  .grid .wrapper {
+    width: 100%;
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid .wrapper .box {
+    width: 100%;
+    height: 350px;
+  }
+  .grid .wrapper .box img {
+    width: 100%;
+  }
+  .grid .wrapper .box p {
+    width: 90%;
+  }
+  .grid .wrapper .box1, .grid .wrapper .box4 {
+    height: 300px;
+  }
+
+  .journey {
+    height: 850px;
+  }
+  .journey .journey-img .home-image-4 {
+    margin: 0;
+    height: 225px;
+  }
+  .journey .journey-img .home-image-4 img {
+    width: 250px;
+  }
+
+  .gallery {
+    height: 600px;
+  }
+  .gallery .gallery-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
