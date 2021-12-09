@@ -577,7 +577,7 @@ footer .wrapper .info i {
   display: flex;
   height: 600px;
 }
-.contact-main div.wrapper .contactBox {
+.contact-main div.wrapper .contact-box {
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,23 +594,23 @@ footer .wrapper .info i {
   height: 300px;
   margin-right: 30px;
 }
-.contact-main div.wrapper .contactBox .socialIcons {
+.contact-main div.wrapper .contact-box .social-icons {
   font-size: 1.8rem;
   color: #345231;
 }
-.contact-main div.wrapper .contactBox .socialIcons i {
+.contact-main div.wrapper .contact-box .social-icons i {
   margin-right: 20px;
 }
-.contact-main div.wrapper .contactForm {
+.contact-main div.wrapper .contact-form {
   width: 60%;
 }
-.contact-main div.wrapper .contactForm fieldset {
+.contact-main div.wrapper .contact-form fieldset {
   padding: 0px;
   width: 100%;
   border: 0px;
   position: relative;
 }
-.contact-main div.wrapper .contactForm fieldset .inputFlex {
+.contact-main div.wrapper .contact-form fieldset .input-flex {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,19 +619,19 @@ footer .wrapper .info i {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact-main div.wrapper .contactForm fieldset .inputFlex .userName, .contact-main div.wrapper .contactForm fieldset .inputFlex .userEmail {
+.contact-main div.wrapper .contact-form fieldset .input-flex .userName, .contact-main div.wrapper .contact-form fieldset .input-flex .userEmail {
   width: 49%;
   height: 75px;
   border: 0px;
   padding: 5px;
 }
-.contact-main div.wrapper .contactForm fieldset textarea {
+.contact-main div.wrapper .contact-form fieldset textarea {
   resize: none;
   width: 100%;
   border: 0px;
   margin: 20px 0px;
 }
-.contact-main div.wrapper .contactForm fieldset input[type=submit] {
+.contact-main div.wrapper .contact-form fieldset input[type=submit] {
   width: 100%;
 }
 
@@ -645,6 +645,7 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 75px;
 }
 
 .blog {
@@ -677,6 +678,9 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.blog-flex-1 .about-willow img {
+  width: 375px;
 }
 .blog-flex-1 .about-willow .about-willow-text {
   margin-top: 20px;
@@ -722,7 +726,7 @@ label {
   border: 0px;
   padding: 10px;
 }
-.blog-flex-2 fieldset .inputFlex {
+.blog-flex-2 fieldset .input-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,7 +735,7 @@ label {
           justify-content: space-between;
   width: 100%;
 }
-.blog-flex-2 fieldset .inputFlex .userName, .blog-flex-2 fieldset .inputFlex .userEmail {
+.blog-flex-2 fieldset .input-flex .userName, .blog-flex-2 fieldset .input-flex .userEmail {
   border: 0px;
   width: 49%;
   height: 75px;
@@ -977,5 +981,147 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+/* ================ MEDIA QUERIES FOR CONTACT PAGE ================== */
+@media (max-width: 1280px) {
+  .header-subpage {
+    background-size: cover;
+  }
+
+  .contact-main {
+    height: 750px;
+  }
+  .contact-main div.wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-main div.wrapper .contact-box {
+    margin: 10px;
+    width: 100%;
+  }
+  .contact-main div.wrapper .contact-form {
+    width: 100%;
+  }
+  .contact-main div.wrapper .contact-form .input-flex {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 780px) {
+  .contact-main {
+    height: 850px;
+  }
+  .contact-main div.wrapper .contact-form {
+    width: 100%;
+    margin: 10px;
+  }
+  .contact-main div.wrapper .contact-form fieldset .input-flex {
+    width: 100%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-main div.wrapper .contact-form fieldset .input-flex .userName {
+    width: 100%;
+  }
+  .contact-main div.wrapper .contact-form fieldset .input-flex .userEmail {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .header-subpage h1 {
+    line-height: 75px;
+  }
+}
+@media (max-width: 1300px) {
+  .header-subpage {
+    background-size: cover;
+  }
+
+  .blog-and-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-and-news .blog-flex-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin: 70px 0 20px 0;
+  }
+  .blog-and-news .blog-flex-1 .about-willow {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .blog-and-news .blog-flex-1 .about-willow .about-willow-text {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-and-news .blog-flex-2 {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 920px) {
+  .blog-and-news .blog-flex-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-and-news .blog-flex-1 img {
+    width: 300px;
+  }
+  .blog-and-news .recent-posts {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .header-subpage h1 {
+    line-height: 75px;
+  }
+
+  .blog-and-news .blog-flex-1 img {
+    width: 200px;
+    height: 338px;
+  }
+  .blog-and-news .blog-flex-2 fieldset .input-flex {
+    width: 100%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-and-news .blog-flex-2 fieldset .input-flex .userName {
+    width: 100%;
+  }
+  .blog-and-news .blog-flex-2 fieldset .input-flex .userEmail {
+    width: 100%;
+    margin-top: 15px;
   }
 }

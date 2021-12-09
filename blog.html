@@ -21,13 +21,13 @@
     <header class="header-subpage">
         <nav>
             <ul>
+                <li class="nav-home"><a href="home.html">Home</a></li>
+                <li class="nav-about"><a href="about.html">About</a></li>
                 <li class="nav-logo">
                     <h2>Willow</h2>
                 </li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-blog"><a href="blog.html">Blog</a></li>
+                <li class="nav-contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="wrapper">
@@ -37,7 +37,9 @@
     </header>
 
     <div class="wrapper">
+        <!-- MAIN STARTS -->
         <main class="blog-and-news">
+            <!-- COLUMN 1 STARTS -->
             <div class="blog-flex-1">
                 <section class="blog col1 about-willow">
                     <img src="./assets/blog-image-2.jpg">
@@ -56,7 +58,8 @@
                     </ul>
                 </section>
             </div>
-
+            <!-- COLUMN 1 ENDS -->
+            <!-- COLUMN 2 STARTS -->
             <div class="blog-flex-2">
                 <section class="blog col2 travel-dest">
                     <h4>My favourite travel destinations</h4>
@@ -85,7 +88,7 @@
                 </section>
                 <form action="submit">
                     <fieldset>
-                        <div class="inputFlex">
+                        <div class="input-flex">
                             <label for="userName">Your Name</label>
                             <input type="text" placeholder="Your name" name="userName" id="userName" required="true" class="userName">
                             <label for="userEmail">Your Email</label>
@@ -98,7 +101,11 @@
                     </fieldset>
                 </form>
             </div>
+            <!-- COLUMN 2 ENDS -->
         </main>
+        <!-- MAIN ENDS -->
     </div>
+
+    <p class="watermark">Copyright Juno College 2021</p>
 </body>
 </html>

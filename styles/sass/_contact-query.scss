@@ -1,0 +1,62 @@
+
+/* ================ MEDIA QUERIES FOR CONTACT PAGE ================== */
+
+@media (max-width: 1280px) {
+    .header-subpage {
+        background-size: cover;
+    }
+
+    .contact-main {
+        height: 750px;
+        div.wrapper {
+            flex-direction: column;
+            margin-top: 50px;
+            align-items: center;
+            .contact-box {
+                // align-items: center;
+                margin: 10px;
+                width: 100%;
+            }
+            .contact-form {
+                width: 100%;
+                .input-flex {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: 780px) {
+    .contact-main {
+        height: 850px;
+        div.wrapper {
+            .contact-form {
+                width: 100%;
+                margin: 10px;
+                fieldset {
+                    .input-flex {
+                        width: 100%;
+                        margin: 0;
+                        flex-direction: column;
+                        .userName {
+                            width: 100%;
+                        }
+                        .userEmail {
+                            width: 100%;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: 575px) {
+    .header-subpage {
+        h1 {
+            line-height: 75px;
+        }
+    }
+}

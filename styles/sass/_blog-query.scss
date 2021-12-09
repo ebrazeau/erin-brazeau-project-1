@@ -1,0 +1,75 @@
+@media (max-width: 1300px) {
+    .header-subpage {
+        background-size: cover;
+    }
+
+    .blog-and-news {
+        flex-direction: column;
+        .blog-flex-1 {
+            flex-direction: row;
+            width: 100%;
+            margin: 70px 0 20px 0; 
+            .about-willow {
+                width: 100%;
+                flex-direction: row;
+                .about-willow-text {
+                    margin-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+        .blog-flex-2 {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+};
+
+@media (max-width: 920px) {
+    .blog-and-news {
+        .blog-flex-1 {
+            flex-direction: column;
+            img {
+                width: 300px;
+            }
+        }
+            .recent-posts {
+                width: 100%;
+            }
+        }
+    };
+
+@media (max-width: 600px) {
+    .header-subpage {
+        h1 {
+            line-height: 75px;
+        }
+    }
+    
+    .blog-and-news {
+        .blog-flex-1 {
+            img {
+                width: 200px;
+                height: 338px;
+            }
+        }
+        .blog-flex-2 {
+            fieldset {
+                .input-flex {
+                    width: 100%;
+                    margin: 0;
+                    flex-direction: column;
+                    .userName {
+                        width: 100%;
+                    }
+                    .userEmail {
+                        width: 100%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }          
+};
