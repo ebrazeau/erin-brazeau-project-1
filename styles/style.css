@@ -280,7 +280,8 @@ a:hover {
           transition-duration: 0.2s;
 }
 
-button:hover {
+button:hover,
+input[type=submit]:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 140, 11, 0.25)), to(rgba(221, 140, 11, 0.25)));
   background: linear-gradient(rgba(221, 140, 11, 0.25), rgba(221, 140, 11, 0.25));
   -webkit-transition-duration: 0.2s;
@@ -1026,6 +1027,10 @@ label {
   }
 }
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header-index {
     height: 650px;
   }
@@ -1233,6 +1238,34 @@ label {
   .blog-and-news .blog-flex-1 img {
     width: 200px;
     height: 338px;
+  }
+  .blog-and-news .blog-flex-1 .blog-flex-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin: 70px 0 20px 0;
+  }
+  .blog-and-news .blog-flex-1 .blog-flex-1 .about-willow {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-and-news .blog-flex-1 .blog-flex-1 .about-willow .about-willow-text {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .blog-and-news .blog-flex-2 fieldset .input-flex {
     width: 100%;

@@ -54,7 +54,22 @@
                 width: 200px;
                 height: 338px;
             }
-        }
+                .blog-flex-1 {
+                flex-direction: row;
+                width: 100%;
+                margin: 70px 0 20px 0; 
+                .about-willow {
+                    width: 100%;
+                    flex-direction: column;
+                    .about-willow-text {
+                        margin-left: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+            }
+        };
         .blog-flex-2 {
             fieldset {
                 .input-flex {
