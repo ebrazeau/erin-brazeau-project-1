@@ -10,24 +10,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        h1 {
-            font-size: 7rem;
-        }
-        .circle-text {
-            width: 117px;
-            height: 150px;
-            transform: translate(60px, -15px);
-        }
-        .img-container-1 {
-            background-color: $offwhite;
-            transform: translateY(65px);
-            margin-left: 25px;
-        }
-        .willow-1 {
-            width: 525px;
+        .heading-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            h1 {
+                font-size: 7rem;
+                line-height: 200px;
+                z-index: 10;
+            }
+            .circle-text {
+                position: absolute;
+                left: -70px;
+                bottom: 325px;
+            }
+            .willow-1 {
+                width: 525px;
+                margin-left: 25px;
+                margin-top: 50px;
+            }
         }
     }
-}
+};
 
 nav {
     height: 100px;
