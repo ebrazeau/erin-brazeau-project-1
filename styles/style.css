@@ -270,8 +270,21 @@ p {
   font-size: 1rem;
 }
 
+a {
+  font-weight: bolder;
+}
+
 a:hover {
   color: #e4a436;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 140, 11, 0.25)), to(rgba(221, 140, 11, 0.25)));
+  background: linear-gradient(rgba(221, 140, 11, 0.25), rgba(221, 140, 11, 0.25));
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 /* ================ GENERAL ================== */
@@ -381,6 +394,9 @@ nav ul a {
   color: #f6f6f6;
   text-decoration: none;
 }
+nav .fa-bars {
+  visibility: collapse;
+}
 
 /* ================ ABOUT INDEX ================== */
 section.who-willow {
@@ -488,7 +504,7 @@ section.who-willow .wrapper {
 /* ================ GALLERY ================== */
 .gallery {
   height: 550px;
-  background-color: lightblue;
+  background-color: white;
 }
 .gallery .gallery-list {
   height: 100%;
@@ -906,7 +922,16 @@ label {
 }
 @media (max-width: 780px) {
   nav {
-    display: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav ul {
+    visibility: collapse;
+  }
+  nav .fa-bars {
+    visibility: visible;
+    font-size: 2rem;
   }
 
   .header-index .header-content {
@@ -918,20 +943,20 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header-index .header-content .heading-container h1 {
     font-size: 7rem;
     position: absolute;
-    top: 275px;
+    top: 225px;
   }
   .header-index .header-content .heading-container .circle-text {
     display: none;
   }
   .header-index .header-content .heading-container .willow-1 {
-    margin-top: 20px;
+    margin: 0px;
   }
 
   .grid {
@@ -973,7 +998,7 @@ label {
 }
 @media (max-width: 600px) {
   .header-index {
-    height: 700px;
+    height: 750px;
   }
   .header-index .header-content {
     height: 100%;
@@ -984,38 +1009,33 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header-index .header-content .heading-container h1 {
     font-size: 5.5rem;
     position: absolute;
-    top: 245px;
+    top: 200px;
   }
   .header-index .header-content .heading-container .circle-text {
     display: none;
   }
   .header-index .header-content .heading-container .willow-1 {
-    margin-top: 20px;
     width: 425px;
   }
 }
 @media (max-width: 500px) {
   .header-index {
-    height: 600px;
+    height: 650px;
   }
   .header-index .header-content .heading-container h1 {
     font-size: 4.5rem;
-    top: 200px;
+    top: 125px;
   }
   .header-index .header-content .heading-container .willow-1 {
     margin: 0px;
     width: 350px;
-  }
-
-  nav {
-    display: none;
   }
 
   section.who-willow {

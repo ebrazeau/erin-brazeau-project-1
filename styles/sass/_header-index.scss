@@ -38,16 +38,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-        ul {
-            display: flex;
-            li {
-                margin: 0px 10px;
-            }
-            a {
-                font-family: $base-font;
-                font-weight: 700;
-                color: $offwhite;
-                text-decoration: none;
-            }
+    ul {
+        display: flex;
+        li {
+            margin: 0px 10px;
         }
+        a {
+            font-family: $base-font;
+            font-weight: 700;
+            color: $offwhite;
+            text-decoration: none;
+        }
+    }
+    .fa-bars {
+        visibility: collapse;
+    }
 }

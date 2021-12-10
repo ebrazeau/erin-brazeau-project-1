@@ -140,7 +140,14 @@
 
 @media (max-width: 780px) {
     nav {
-        display: none;
+        justify-content: flex-end;
+        ul {
+            visibility: collapse;
+        }
+        .fa-bars {
+            visibility: visible;
+            font-size: 2rem;
+        }
     }
     .header-index {
         .header-content {
@@ -148,17 +155,17 @@
             .heading-container {
                 height: 100%;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 h1 {
                     font-size: 7rem;
                     position: absolute;
-                    top: 275px;
+                    top: 225px;
                 }
                 .circle-text {
                     display: none;
                 }
                 .willow-1 {
-                    margin-top: 20px;
+                    margin: 0px;
                 }
             }
         }
@@ -193,23 +200,22 @@
 
 @media (max-width: 600px) {
     .header-index {
-        height: 700px;
+        height: 750px;
         .header-content {
             height: 100%;
             .heading-container {
                 height: 100%;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 h1 {
                     font-size: 5.5rem;
                     position: absolute;
-                    top: 245px;
+                    top: 200px;
                 }
                 .circle-text {
                     display: none;
                 }
                 .willow-1 {
-                    margin-top: 20px;
                     width: 425px;
                 }
             }
@@ -221,12 +227,12 @@
 
 @media (max-width: 500px) {
     .header-index {
-        height: 600px;
+        height: 650px;
         .header-content {
             .heading-container {
                 h1 {
                     font-size: 4.5rem;
-                    top: 200px;
+                    top: 125px;
                 }
                 .willow-1 {
                     margin: 0px;
@@ -234,9 +240,6 @@
                 }
             }
         }
-    }
-    nav {
-        display: none;
     }
     section.who-willow {
         height: 650px;
