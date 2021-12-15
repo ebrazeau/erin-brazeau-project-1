@@ -141,12 +141,21 @@
 @media (max-width: 780px) {
     nav {
         justify-content: flex-end;
-        ul {
+        position: relative;
+        .hor-nav {
             visibility: collapse;
         }
         .fa-bars {
             visibility: visible;
             font-size: 2rem;
+        }
+        .vert-nav {
+            visibility: visible;
+            position: absolute;
+            top: 70px;
+            h2 {
+                display: none;
+            }
         }
     }
     .header-index {
