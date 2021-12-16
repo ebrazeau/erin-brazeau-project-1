@@ -289,6 +289,10 @@ input[type=submit]:hover {
 }
 
 /* ================ GENERAL ================== */
+html {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -400,7 +404,9 @@ nav .fa-bars {
   visibility: collapse;
 }
 nav .vert-nav {
-  background-color: aqua;
+  width: 200px;
+  height: 150px;
+  background-color: rgba(111, 154, 106, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +414,12 @@ nav .vert-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 20;
 }
 

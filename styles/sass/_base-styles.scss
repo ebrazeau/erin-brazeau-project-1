@@ -55,6 +55,10 @@ input[type="submit"]:hover {
 
 /* ================ GENERAL ================== */
 
+html {
+    overflow-x: hidden;
+}
+
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
